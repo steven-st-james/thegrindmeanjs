@@ -3,4 +3,11 @@
     <h1>The Grind </h1>
     <small>A small band from Salt Lake City</small>
   </div>
+  <div class="row">
+    <div class="col-md-6">
+      <ul class="list-group" ng-repeat="article in articles">
+        <li class="list-group-item">{{ article.title }}</li>
+      </ul>
+    </div>
+  </div>
 </section>

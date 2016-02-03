@@ -29,7 +29,7 @@
           articleResolve: newArticle
         },
         data: {
-          roles: ['user', 'admin']
+          roles: ['admin']
         }
       })
       .state('articles.edit', {
@@ -41,7 +41,7 @@
           articleResolve: getArticle
         },
         data: {
-          roles: ['user', 'admin']
+          roles: [ 'admin']
         }
       })
       .state('articles.view', {
