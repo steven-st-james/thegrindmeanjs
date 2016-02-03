@@ -1,0 +1,47 @@
+<section>
+  <div class="page-header">
+    <h1>{{vm.article._id ? 'Edit Show' : 'New Show'}}</h1>
+  </div>
+  <div class="col-md-12">
+    <form name="vm.form.articleForm" class="form-horizontal" ng-submit="vm.save(vm.form.articleForm.$valid)" novalidate>
+      <fieldset>
+        <div class="form-group" show-errors>
+          <label class="control-label" for="title">Venue</label>
+          <input name="title" type="text" ng-model="vm.article.title" id="title" class="form-control" placeholder="Venue Name" required>
+          <div ng-messages="vm.form.articleForm.title.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Name of Venue is required</p>
+          </div>
+        </div>
+          <div class="form-group">
+            <label class="control-label" for="Date">Date</label>
+            <input name="title" type="text" ng-model="vm.article.date" id="date" class="form-control" placeholder="Show Date" required>
+            <div ng-messages="vm.form.articleForm.title.$error" role="alert">
+              <p class="help-block error-text" ng-message="required">Please enter Date</p>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="time">Time</label>
+            <input name="title" type="text" ng-model="vm.article.time" id="time" class="form-control" placeholder="Show Time" required>
+            <div ng-messages="vm.form.articleForm.title.$error" role="alert">
+              <p class="help-block error-text" ng-message="required">Enter the show time</p>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="venuwebsite">Venue Website</label>
+            <input name="title" type="text" ng-model="vm.article.venuwebsite" id="venu-website" class="form-control" placeholder="Venue Website" required>
+            <div ng-messages="vm.form.articleForm.title.$error" role="alert">
+              <p class="help-block error-text" ng-message="required">Please enter the venue website</p>
+          </div>
+
+        <div class="form-group">
+          <label class="control-label" for="content">Content</label>
+          <textarea name="content" data-ng-model="vm.article.content" id="content" class="form-control" cols="30" rows="10" placeholder="Content"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-default">{{vm.article._id ? 'Update' : 'Create'}}</button>
+        </div>
+        <div ng-show="vm.error" class="text-danger">
+          <strong ng-bind="vm.error"></strong>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</section>

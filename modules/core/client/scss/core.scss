@@ -1,0 +1,18 @@
+body {
+  background-color: #cdcdcd;
+    header{
+      .nav{
+        li {
+          a {
+            img {
+              max-width: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    section.content {
+      margin-top: 5em;
+    }
+}

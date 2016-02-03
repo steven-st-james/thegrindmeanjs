@@ -1,0 +1,6 @@
+body {
+  background-color: #cdcdcd; }
+  body header .nav li a img {
+    max-width: 20px; }
+  body section.content {
+    margin-top: 5em; }
