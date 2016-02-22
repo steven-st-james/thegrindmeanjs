@@ -1,8 +1,8 @@
 <section>
   <div class="page-header">
-    <h1 ng-bind="vm.article.title"></h1>
+    <h3 ng-bind="vm.article.title"></h3>
   </div>
-  <div class="pull-right" ng-show="vm.authentication.user._id == vm.article.admin">
+  <div class="pull-right" ng-show="vm.authentication.admin == vm.article.admin">
     <a class="btn btn-primary" ui-sref="articles.edit({ articleId: vm.article._id })">
       <i class="glyphicon glyphicon-edit"></i>
     </a>

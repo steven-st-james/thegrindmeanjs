@@ -14,7 +14,7 @@ module.exports = function (app) {
 
   // Single article routes
   app.route('/api/articles/:articleId')
-  // .all(articlesPolicy.isAllowed)
+  .all(articlesPolicy.isAllowed)
     .get(articles.read)
     .put(articles.update)
     .delete(articles.delete);
