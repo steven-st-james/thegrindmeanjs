@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Module dependencies and more.
+ * Module dependencies.
  */
 var app;
 
